@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyfy</title>
+
+    <link href="style_nasa.css" rel="stylesheet"/>
+    <script src="script_nasa.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <a href="main.html"><img class="logo" src="./img/logo_skyfy_blanco.png" alt="Logo SkyFy"> </a>
+        <ul class="headerlist">
+            <li><a class="letterpanel" href="main.html">Main</a></li>
+            <li><a class="letterpanel" href="nasa.html">Nasa</a></li>  
+            <li><a class="letterpanel" href="learn.html">Learn</a></li> 
+         </ul>
+    </header>
+
+    <main>
+    <div class="title_nasa">
+        <h1>NASA Photo of the Day</h1>
+    </div>
+   
+    <div id="content">
+        <p>Uploading image...</p>
+    </div>
+
+    <div class="date_picker">
+        <label for="date">Select a date: </label>
+        <input type="date" id="date">
+        <button id="fetchImage">Show Image</button>
+        
+    </div>
+
+    </main>
+
+    
+    
+
+<footer>
+    <div class="footer_caja_flex">
+        <div class="footer_texto"><p id="foot_text_id">All the results on this website are real and are updated instantly, thanks to the use of APIs</p></div>
+        <div class="footer_links_box footer_caja">
+            <p>This website has used these APIs:</p>
+            <ul>
+                <li><a href="https://api.nasa.gov/" target="_blank" class="footer_link">API NASA Website</a></li>
+                <li><a href="https://openweathermap.org/" target="_blank" class="footer_link">API Weather Website</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="box_IMAC"><p id="text_IMAC">IMAC - 2024</p></div>
+</footer>
+
+
+</body>
+</html>

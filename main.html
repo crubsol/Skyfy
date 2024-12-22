@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyfy</title>
+
+    <link href="style_main.css" rel="stylesheet"/>
+    <script src="script_main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="main.html"><img class="logo" src="./img/logo_skyfy_blanco.png" alt="Logo SkyFy"> </a>
+        <ul class="headerlist">
+            <li><a class="letterpanel" href="main.html">Main</a></li>
+            <li><a class="letterpanel" href="nasa.html">Nasa</a></li>  
+            <li><a class="letterpanel" href="learn.html">Learn</a></li> 
+         </ul>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>See the sky, plan your day</h1>
+            <div class="search_bar">
+                <label for="city_select">Search your city:</label>
+                <select id="city_select">
+                    <option value="Paris, FR">Paris, FR</option>
+                    <option value="Buenos Aires, ARG">Buenos Aires, ARG</option>
+                    <option value="Madrid, ES">Madrid, ES</option>
+                    <option value="New York, USA">New York, USA</option>
+                    <option value="London, GB">London, GB</option>
+                    <option value="Tokyo, JP">Tokyo, JP</option>
+                    <option value="Sydney, AU">Sydney, AU</option>
+                    <option value="Taipei, TW">Taipei, TW</option>
+                    <option value="Berlin, DE">Berlin, DE</option>
+                    <option value="Singapur, SG">Singapur, SG</option>
+                </select>
+            </div>
+
+        </section>
+
+    
+        <section class="weather_info">
+            <div class="weather_details">
+                <h2 id="city_name">City, Country</h2>
+                <div class="today">
+                    <div class="today_row">
+                        <p id="temp_max"><span >--°C</span> <span>max</span></p>
+                        <p id="temp_min"><span>--°C</span> <span>min</span></p>
+                        <p id="humidity"><span>--%</span> <span>humidity</span></p>
+                        <p id="wind_speed"><span>-- km/h</span> <span>speed of the wind</span></p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="current_weather">
+                <img id="weather_icon" src="" alt="Weather icon">
+                <p class="temperature" id="current_temp">--°C</p>
+                <p class="feels_like" id="feels_like">feels like: --°C</p>
+                
+            </div>
+        </section>
+    
+    
+
+        <section class="extra_info">
+            <div class="info_card">
+                <h3>Discover the photo of the day</h3>
+                <p>
+                    You want to find out what is the NASA photo of the day, you can do this in our new website.
+                </p>
+                <button onclick="window.location.href='nasa.html'">NASA Photo</button>
+            </div>
+            <div class="info_card">
+                <h3>Learn more about climate</h3>
+                <p>
+                    You want to see how much you really know about the climate? Do these quizzes to make sure you are a completely pro.
+                </p>
+                <button onclick="window.location.href='learn.html'">Quiz!</button>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer_caja_flex">
+            <div class="footer_texto"><p id="foot_text_id">All the results on this website are real and are updated instantly, thanks to the use of APIs</p></div>
+            <div class="footer_links_box footer_caja">
+                <p>This website has used these APIs:</p>
+                <ul>
+                    <li><a href="https://api.nasa.gov/" target="_blank" class="footer_link">API NASA Website</a></li>
+                    <li><a href="https://openweathermap.org/" target="_blank" class="footer_link">API Weather Website</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="box_IMAC"><p id="text_IMAC">IMAC - 2024</p></div>
+    </footer>
+
+
+    
+</body>
+</html>

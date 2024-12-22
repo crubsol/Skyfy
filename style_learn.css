@@ -1,0 +1,267 @@
+/*VARIABLES AND FONTS*/
+:root {
+    --Skyfy_azul: #4381c1;
+    --Skyfy_amarillo: #FFB700;
+    --Skyfy_gris: #555;
+    --Skyfy_blanco: #fff;
+    --Skyfy_fondo: #e4f2ff;
+}
+
+@font-face {
+    font-family: montserrat_medium;
+    src: local(montserrat),
+    url("./Montserrat/static/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: montserrat_bold;
+    src: local(montserrat),
+    url("./Montserrat/static/Montserrat-Bold.ttf");
+}
+
+/*HEADER AND FOOTER*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Skyfy_azul);
+    
+}
+
+.letterpanel {
+    font-family: 'montserrat_medium';
+    font-size: 1.5em;
+    color: var(--Skyfy_blanco);
+    text-decoration: none;
+}
+
+.letterpanel:hover {
+    color: grey;
+}
+
+.headerlist {
+    list-style-type: none;
+    display: flex;
+    gap:5em;
+    margin: 0 3em;
+}
+
+.logo {
+    width: 10em; 
+    margin-left: 3em;
+    
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Skyfy_azul);
+    color: var(--Skyfy_blanco);
+    padding: 20px;
+    font-family: montserrat_medium;
+    font-size: 16px;
+    text-align: center;
+    
+    
+}
+
+.footer_box_flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    
+   
+    
+}
+
+.footer_text {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+    
+}
+
+.footer_links_box {
+    flex: 1;
+    text-align: left;
+    padding: 0 20px;
+    
+}
+
+.footer_box ul {
+    margin-left: 1.2em;
+    padding: 0;
+    
+}
+
+
+.footer_box a {
+    color: var(--Skyfy_blanco);
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer_box a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    text-align: center;
+    background-color: var(--Skyfy_fondo);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: montserrat_medium;
+    
+
+}
+
+
+
+
+/*CONTENT*/
+.title_learn {
+
+    color: #4381c1;
+    font-family:'montserrat_bold';
+    font-size: 40px; 
+}
+
+.quiz_container {
+    max-width: 23em;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 180px;                              /* fixed height of the container */
+   
+}
+
+.description {
+    font-family: montserrat_medium;
+    color: var(--Skyfy_gris);
+    font-size: 22px ;
+}
+
+.question {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    
+}
+
+
+
+.true_button:hover {
+    color: var(--Skyfy_azul);
+    border: 3px solid var(--Skyfy_azul);    
+    background-color: var(--Skyfy_blanco) 
+    
+    
+}
+.true_button {
+    background-color: var(--Skyfy_azul);
+    color: var(--Skyfy_blanco);
+    border:3px solid var(--Skyfy_azul)
+}
+
+.false_button {
+    background-color: var(--Skyfy_amarillo);
+    color: var(--Skyfy_blanco);
+    border: 3px solid var(--Skyfy_amarillo)
+}
+
+.false_button:hover {
+    color: var(--Skyfy_amarillo);
+    border: 3px solid var(--Skyfy_amarillo);    
+    background-color: var(--Skyfy_blanco)
+ 
+ 
+}
+
+.result {
+    font-size: 1.5em;
+    margin-top: 20px;
+    line-height: 130px; /* align the text */
+}
+
+.container_image {
+
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 10px;
+    margin: 0 auto; 
+    gap: 20px; 
+
+    
+}
+
+.image {
+    width: 30%;
+    border: 5px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .title_learn {
+        font-size: 25px; 
+    }
+    .description {
+        padding: 10px;
+        font-size: 20px ;
+    }
+    .quiz-container {
+        padding: 10px;
+    }
+
+    .container_image {
+        flex-direction: column;
+    }
+
+    .image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        width: 6em; 
+        margin-left: 2em;
+    }
+
+    .letterpanel {
+        
+        font-size: 1.2em;
+   
+    }
+
+    .headerlist {
+        
+        gap:1em;
+        margin: 0 2em;
+    }
+}

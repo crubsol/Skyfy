@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style_learn.css" rel="stylesheet"/>
+    <title>Skyfy</title>
+
+    <script src="script_learn.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <a href="main.html"><img class="logo" src="./img/logo_skyfy_blanco.png" alt="Logo SkyFy"> </a>
+        <ul class="headerlist">
+            <li><a class="letterpanel" href="main.html">Main</a></li>
+            <li><a class="letterpanel" href="nasa.html">Nasa</a></li>  
+            <li><a class="letterpanel" href="learn.html">Learn</a></li> 
+         </ul>
+    </header>
+
+
+    <main>
+    <div class="title_learn">
+        <h1>Quiz Natural Disasters</h1>
+        <p class="description">"Think you know about natural disasters?  Test your knowledge with this quick 5-question quiz! </p>
+    </div>
+
+    <div class="quiz_container">
+        <div class="question_container">
+            <p class="question">Loading question...</p>
+            <div class="buttons">
+                <button class="true_button" onclick="submitAnswer(true)">True</button>
+                <button class="false_button" onclick="submitAnswer(false)">False</button>
+            </div>
+        </div>
+        <p class="result"></p>
+    </div>
+
+   
+    <div class="container_image">
+        <img src="./img/dana_catástrofe.jpeg" alt="Dana catastrophe in Valencia 2024" class="image">
+        <img src="./img/terremoto.jpg" alt="Earthquake in Turkey" class="image">
+        <img src="./img/tsunamis.jpg" alt="Tsunami" class="image">
+    </div>
+    </main>
+
+<footer>
+    <div class="footer_box_flex">
+        <div class="footer_text"><p id="foot_text_id">All the results on this website are real and are updated instantly, thanks to the use of APIs</p></div>
+        <div class="footer_links_box footer_box">
+            <p>This website has used these APIs:</p>
+            <ul>
+                <li><a href="https://api.nasa.gov/" target="_blank" class="footer_link">API NASA Website</a></li>
+                <li><a href="https://openweathermap.org/" target="_blank" class="footer_link">API Weather Website</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="box_IMAC"><p id="text_IMAC">IMAC - 2024</p></div>
+</footer>
+</body>
+</html>
